@@ -9,3 +9,16 @@ clone_folder: c:\projects\uacme
 build:
   project: Source/uacme.sln
   verbosity: normal
+  
+artifacts:
+  - path: '**/*.exe'
+    name: exes
+
+  - path: '**/*.dll'
+    name: dlls
+
+  - path: Build/
+    name: build dir
+    type: zip
+    
+    
